@@ -42,7 +42,8 @@ I am open for hire and internships in impactful projects.
 
 ## Interests
 
-Besides studies, I enjoy hiking and cooking, both of which help me maintain a creative and fresh perspective in my professional work.
+Besides studies, I enjoy hiking and cooking, both of which help me maintain a creative 
+and fresh perspective in my professional work.
 
 ## Work in Progress
 
@@ -50,27 +51,41 @@ Besides studies, I enjoy hiking and cooking, both of which help me maintain a cr
 
 #### Project Overview
 
-**Graildient Descent** is an ongoing machine learning project focused on predicting the sold prices of high-end fashion items listed on [Grailed](https://www.grailed.com/), an online marketplace. The project involves building a comprehensive data pipeline that includes web scraping, ETL, and model training to forecast item sold prices.
+**Graildient Descent** is a machine learning project focused on predicting the sold 
+prices of high-end fashion items listed on [Grailed](https://www.grailed.com/), an 
+online marketplace. The project demonstrates end-to-end ML pipeline development, from 
+data collection to model deployment, working with multimodal data:
 
-This project works with **multimodal data**:
-- **Tabular features**: Item attributes like brand, category, and size.
-- **Text features**: Descriptions and titles of items.
-- **Images**: Collected cover images of items.
+- **Tabular features**: Item attributes like brand, category, and size
+- **Text features**: Descriptions, titles, and hashtags
+- **Images**: Cover images of items (future work in progress)
 
 #### Main Goals
 
-- **Data Collection**: Scrape data from Grailed listings, including images, item details, and sold prices.
-- **ETL Pipeline**: Build an Apache Airflow-based ETL pipeline to manage and process the collected data.
-- **Price Prediction**: Develop machine learning models to predict sold prices using features like item descriptions, categories, and more.
-- **Deployment**: Showcase the results through a Streamlit app for EDA and predictions, and a FastAPI service for real-time price predictions.
+- **Data Collection**: Build a robust data pipeline for collecting Grailed listings data
+- **ETL Pipeline**: Develop an Apache Airflow-based ETL pipeline for data collection and 
+processing
+- **Price Prediction**: Create ML models to predict sold prices using item features
+- **Deployment**: Deploy results via FastAPI service and Streamlit app
 
 #### Current Status
 
-- **Scraper**: Successfully implemented a scraper to collect data from Grailed, including item images and sold prices.
-- **ETL Pipeline**: Built a fully functional ETL pipeline using Apache Airflow.
-- **Exploratory Data Analysis (EDA)**: Currently working on EDA, focusing on text and categorical features, with insights into fashion categories and pricing trends.
+- **Data Pipeline**: Successfully implemented:
+  - Web scraper for Grailed sold listings
+  - ETL pipeline using Apache Airflow
+- **Analysis & Modeling**:
+  - Completed extensive EDA for tabular and text features
+  - Conducted ML experiments achieving 37.1% improvement over baseline
+  - Best model: CatBoost with combined tabular and text features (RMSLE: 0.64)
+- **Deployment**:
+  - Deployed interactive [Streamlit app](https://graildient-descent.streamlit.app) 
+    showcasing:
+    - Data collection process
+    - EDA visualizations and insights
+    - ML experiment methodology and results
 
-Stay tuned for more updates as I run machine learning experiments and refine the model!
+Next steps include completing image feature analysis, implementing FastAPI service for 
+predictions, and exploring deep learning approaches for potential improvements.
 
 ## Completed Projects
 
@@ -78,18 +93,28 @@ Stay tuned for more updates as I run machine learning experiments and refine the
 
 #### Project Overview
 
-This machine learning service was designed to identify the authorship of texts among ten prominent Russian 19th-century writers. Developed as part of my master’s degree coursework, the project focused on natural language processing and building a full ML pipeline from data collection to deployment.
+This machine learning service was designed to identify the authorship of texts among ten 
+prominent Russian 19th-century writers. Developed as part of my master’s degree 
+coursework, the project focused on natural language processing and building a full ML 
+pipeline from data collection to deployment.
 
 #### Main Goals
 
-- **Build an End-to-End ML Pipeline**: From data collection from open sources to monitoring the performance of a deployed service.
-- **Apply ML Techniques in NLP**: Employ machine learning algorithms tailored for natural language processing (NLP).
-- **Get Hands-On MLOps and DevOps Experience**: Practical experience in MLOps and DevOps principles, including cloud storage, microservice architecture, containerization, deployment, and performance monitoring.
+- **Build an End-to-End ML Pipeline**: From data collection from open sources to 
+monitoring the performance of a deployed service.
+- **Apply ML Techniques in NLP**: Employ machine learning algorithms tailored for 
+natural language processing (NLP).
+- **Get Hands-On MLOps and DevOps Experience**: Practical experience in MLOps and DevOps 
+principles, including cloud storage, microservice architecture, containerization, 
+deployment, and performance monitoring.
 
 #### Project Outcomes
 
-- **Best Model Performance**: Developed a logistic regression model using text statistics and Bag-of-Words embeddings, achieving a weighted F1 score of 0.85 on test data.
-- **Service Deployment**: Successfully built and deployed a FastAPI application to handle predictions and integrated a Telegram bot for user interaction.
+- **Best Model Performance**: Developed a logistic regression model using text 
+statistics and Bag-of-Words embeddings, achieving a weighted F1 score of 0.85 on test 
+data.
+- **Service Deployment**: Successfully built and deployed a FastAPI application to 
+handle predictions and integrated a Telegram bot for user interaction.
 
 > **Note**: This project is primarily in Russian.
 
