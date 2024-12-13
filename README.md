@@ -47,45 +47,30 @@ and fresh perspective in my professional work.
 
 ## Work in Progress
 
-### [Graildient Descent](https://github.com/kirill-rubashevskiy/graildient-descent)
+### Graildient Descent
 
-#### Project Overview
+A machine learning project that predicts sold prices for high-end, pre-owned, and 
+limited edition fashion items on Grailed marketplace. Built with Python, the project 
+demonstrates a complete ML system featuring:
 
-**Graildient Descent** is a machine learning project focused on predicting the sold 
-prices of high-end fashion items listed on [Grailed](https://www.grailed.com/), an 
-online marketplace. The project demonstrates end-to-end ML pipeline development, from 
-data collection to model deployment, working with multimodal data:
+🔄 **Data Pipeline**
+- Selenium-based web scraper for Grailed listings
+- Apache Airflow ETL pipeline for automated data collection 
+- Comprehensive data cleaning and preprocessing workflow
 
-- **Tabular features**: Item attributes like brand, category, and size
-- **Text features**: Descriptions, titles, and hashtags
-- **Images**: Cover images of items (future work in progress)
+🔍 **ML Development**
+- Multimodal approach combining tabular and text features
+- Extensive ML experiments with various models and architectures
+- Best model: CatBoost achieving 37.1% improvement over baseline (RMSLE: 0.64)
 
-#### Main Goals
+🚀 **Production System**
+- FastAPI service providing real-time price predictions
+- Interactive Streamlit app for model exploration and predictions
+- CI/CD pipeline with GitHub Actions
 
-- **Data Collection**: Build a robust data pipeline for collecting Grailed listings data
-- **ETL Pipeline**: Develop an Apache Airflow-based ETL pipeline for data collection and 
-processing
-- **Price Prediction**: Create ML models to predict sold prices using item features
-- **Deployment**: Deploy results via FastAPI service and Streamlit app
+⚙️ **Tech Stack**: Python, FastAPI, Streamlit, Apache Airflow, Weights & Biases, scikit-learn, CatBoost
 
-#### Current Status
-
-- **Data Pipeline**: Successfully implemented:
-  - Web scraper for Grailed sold listings
-  - ETL pipeline using Apache Airflow
-- **Analysis & Modeling**:
-  - Completed extensive EDA for tabular and text features
-  - Conducted ML experiments achieving 37.1% improvement over baseline
-  - Best model: CatBoost with combined tabular and text features (RMSLE: 0.64)
-- **Deployment**:
-  - Deployed interactive [Streamlit app](https://graildient-descent.streamlit.app) 
-    showcasing:
-    - Data collection process
-    - EDA visualizations and insights
-    - ML experiment methodology and results
-
-Next steps include completing image feature analysis, implementing FastAPI service for 
-predictions, and exploring deep learning approaches for potential improvements.
+🔗 [Live Demo](https://graildient-descent.streamlit.app) | [Documentation](https://github.com/kirill-rubashevskiy/graildient-descent#readme)
 
 ## Completed Projects
 
